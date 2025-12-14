@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./public/css/all.min.css">
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+    <title>Linkedin-clone</title>
+  </head>
+  <body class="bg-[#F4F2EE]">
+    <!-- nav bar section -->
+    <header class="bg-[#FFFFFF]">
+      <nav class="flex justify-around px-8 py-1.5">
+        <!-- left content in below -->
+        <div class="flex items-center space-x-2">
+          <!-- icon container -->
+          <div class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              data-supported-dps="24x24"
+              width="32"
+              height="32"
+              focusable="false">
+              <path
+                fill="#0A66C2"
+                d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+            </svg>
+          </div>
+          <!-- search input -->
+          <div class="relative">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="absolute left-1 top-1"
+              width="25"
+              height="25"
+              viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M9.539 15.23q-2.398 0-4.065-1.666Q3.808 11.899 3.808 9.5t1.666-4.065T9.539 3.77t4.064 1.666T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l5.909 5.907q.14.14.15.345q.009.203-.15.363q-.16.16-.354.16t-.354-.16l-5.908-5.908q-.75.639-1.725.989t-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361T12.9 6.14T9.54 4.77q-1.991 0-3.361 1.37T4.808 9.5t1.37 3.36t3.36 1.37" />
+            </svg>
+            <input
+              type="search"
+              class="px-2 py-1 pl-8 text-sm border rounded-full w-60"
+              placeholder="Search" />
+          </div>
+        </div>
+
+        <!-- right content in below-->
+        <div class="flex space-x-2">
+          <!-- icon -->
+          <div>
+            <!-- ul tag start below -->
+            <ul class="flex space-x-8">
+              <!-- home  icon -->
+              <li class="hover:text-black">
+                <a href="" target="_blank">
+                  <div class="flex flex-col items-center justify-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                      <path class=" hover:fill-black" d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7z"></path></svg>
+                    <!-- text  -->
+                    <p class="text-[rgba(0,0,0,0.6)] text-xs  hover:text-black ">Home</p>
+                  </div>
+                </a>
+              </li>
+              <!-- my network -->
+                <li>
+                <a href="" target="_blank">
+                  <div class="flex flex-col items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                   <path class=" hover:fill-black" d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z">
+                   </path>
+                    </svg>
+                    <!-- text  -->
+                    <p class="text-[rgba(0,0,0,0.6)] text-xs  hover:text-black ">My Network</p>
+                  </div>
+                </a>
+              </li>
+              <!-- Jobs icons -->
+               <li>
+                <a href="" target="_blank">
+                  <div class="flex flex-col items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                     <path class=" hover:fill-black" d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z">
+                     </path>
+                     </svg>
+                    <!-- text  -->
+                    <p class="text-[rgba(0,0,0,0.6)] text-xs  hover:text-black ">Jobs</p>
+                  </div>
+                </a>
+              </li>
+              <!-- message icon -->
+                <li>
+                <a href="" target="_blank">
+                  <div class="flex flex-col items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                     <path class=" hover:fill-black" d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z">
+                     </path>
+                     </svg>
+                    <!-- text  -->
+                    <p class="text-[rgba(0,0,0,0.6)] text-xs  hover:text-black ">Messaging</p>
+                  </div>
+                </a>
+              </li>
+              <!-- notifications -->
+                <li class=" hover:text-black">
+                <a href="" target="_blank">
+                  <div class="flex flex-col items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                     <path class=" hover:fill-black" d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z">
+                     </path>
+                     </svg>
+                    <!-- text  -->
+                    <p class="text-[rgba(0,0,0,0.6)] hover:text-black text-xs ">Notifications</p>
+                  </div>
+                </a>
+              </li>
+              <!-- profile image -->
+               <li>
+                <a href="" target="_blank">
+                  <div class="flex flex-col items-center justify-center">
+                   <img src="./public/pr.png" alt="profile images" class="rounded-full w-7 h-7" >
+                    <!-- text  -->
+                    <p class="text-[rgba(0,0,0,0.6)]  hover:text-black text-xs ">Me</p>
+                    
+                  </div>
+                </a>
+              </li>
+              <!-- div  -->
+               <div class="text-[rgba(0,0,0,0.6)] border-l-1 "></div>
+               <!-- Business icons -->
+                <li>
+                <a href="" target="_blank">
+                  <div class="flex flex-col items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="rgba(0,0,0,0.6)" class="mercado-match" width="24" height="24" focusable="false">
+                   <path class=" hover:fill-black" d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                  </svg>
+                    <!-- text  -->
+                    <p class="text-[rgba(0,0,0,0.6)] text-xs  hover:text-black ">For Business</p>
+                  </div>
+                </a>
+              </li>
+                
+              <!-- Premium icons -->
+                <li>
+                <a href="" target="_blank">
+                  <div class="flex flex-col items-center justify-center">
+                <div class="p-3 bg-linear-[40deg,#E7A33E_50%,#F8C77E_50%] w-4 rounded "></div>
+                    <!-- text  -->
+                    <p class="text-[rgba(0,0,0,0.6)] text-xs   hover:text-black">Try Premium for ₹0</p>
+                  </div>
+                </a>
+              </li>
+              <!--  -->
+              
+
+               
+
+              <!-- end now ul tag -->
+            </ul>
+            <!-- right end  -->
+          </div>
+          <!-- icon end  -->
+        </div>
+      </nav>
+    </header>
+
+
+<!-- hero section -->
+ <section class="grid grid-cols-1 md:grid-cols-[220px_1fr] lg:grid-cols-[220px_1fr_300px] max-w-6xl mx-auto gap-6 px-4 pt-5 bg-[#F4F2EE]">
+
+  <!-- left content -->
+<aside class="h-screen ">
+
+  <!-- profile picture -->
+  <div class="w-full h-60  bg-[#FFFFFF] rounded-l-lg rounded-r-lg border-gray-300 border ">
+    <!-- banner image -->
+    <div class="relative ">
+     <img src="./public/ban.jfif" class="rounded-t-lg " alt="banner image">
+      <img src="./public/pr.png" class="absolute border border-white rounded-full w-18 top-7 left-4" alt="profile image">
+     </div>
+     <!-- image description -->
+     <div class="pt-2 px-4 py-2 bg-[#FFFFFF] ">
+       <h3 class="text-xl font-semibold text-[rgba(0,0,0,0.9)] pt-9.5" >deva p</h3>
+       <p class="text-xs font-normal text-[rgba(0,0,0,0.9)]">"Junior Web Developer | Proficient in Frontend & Backend...</p>
+       <p class="text-[rgba(0,0,0,0.6)] font-normal text-xs pt-1">Chennai, Tamil Nadu</p>
+       <!-- company profile -->
+       <div class="flex items-center justify-center pt-2 ">
+         <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wgARCABkAGQDASIAAhEBAxEB/8QAHAABAAIDAQEBAAAAAAAAAAAAAAYIBAUHAwEC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAHgoAAAAAAAAAAAAAEqisyzvxwO1+aV7WH6HrNNVr8Aq+tJtyoiVxQASKOiw/vXnNl6V1Djc0s2Pp9xDM2Hzm5roq8pdELAAN3v4KJ7+oAOj4kDAAAAAAAAAAAAAAAAH//EACUQAAMAAgECBQUAAAAAAAAAAAMEBQIGARQVABARFlASEyAmMP/aAAgBAQABBQL5UovqloatTor04b0fn+Wpq4OWokhXaRatKUO9mYQ9UcD+x693NnNT7B4POGPRemLmwbOV4ljzgVOI9aOVyCIqlNmripQ9vkqcjqSOOdf8CLknGybN2vOjkOyzqno/QnhGt5hYKvz3V3xqomLrFdUcdTiKJ+g1HEJbPVxltOZ4cQFLjK5qFPqxfjLqlk5U9qzrr4bi4N73k10zG8OHzc2wjany/wD/xAAcEQEAAQQDAAAAAAAAAAAAAAABAgARICEwMUD/2gAIAQMBAT8B5oIO6YyAU7zuunDVvP8A/8QAGhEAAgIDAAAAAAAAAAAAAAAAAREAISAwQP/aAAgBAgEBPwHcWqjBrNdf/8QAOhAAAgECBAIGBQoHAAAAAAAAAQIDBBEABRITFCEiMUFRcaEgJDJhgQYWIzA0QlBSscEzkZKTorPR/9oACAEBAAY/AvxWmGqKfSjvaEdOPn9/vwJ4qbTAeqWVxGp8L9eF4unaIN7Ldat4Ecvq40mJ4ZVaWVQfaVRe2BmueySy75Igp4riOFAdPZ1c8Z/lFRV7NLumGGhlbne/Jxft8MU1UbcZJtZafdock+VsZWZ442lNZKInReqLa9lj33xmCVYgmqVqYUm6K6dq3S8sU1HHGjUVRDXsLr+V+gfPD9EfZsr/ANuMvneNN2LMKimDBQLpoNr4lGYsjVSWUmO1vL0IKpl3IxdZE/MpFj5Y00dB84so1F6eWBunHfnpYftbDfKSsyloJIltTUcEZeR37Ge3d7+7FHSNleYGeOtNQ/qzezbFM8OU5q0PFtVzO9I3I7ZQADDJS5fm0sZqYpdUlG17cw364SKLKc1aqhSpihXhGC2kbkT8LYhUZTmnFOtLFKvCtpUQte48cUUkGU5qaZKmWqmd6Rr6mUiwGJClPmaUCprLy0baye7u+JxHVUsjvAzmNllFmRv39C8UjxnvQ2x9rn/uHFbA9ZUa1pWeL6U/xLgL+uJ59NTUKlWYTetZNIstvHrOMwp6eWqi4OXbPrLHVdG0n+oDFWBUVe6gks3EN0THt3HxLHHCLVVUF4nbSakmwEiqG+ILcvdiaqiet3xO0besE7B1dFWHcV7e/GqWSSpjtYxvK3/cRwxQinp0JbQGLFmPaSev0p2htqlj27n7vMG/liaOejhLPMZlkBa6E2vbn7u3FdVIkavVyRyMOdgUbUMVUZhiLTvI25zuusgsP8RiR9qJZGWRdQvy1OH8iPPFXDwdPCaknXIgN7F9dv5/jH//xAAnEAEAAgICAQIFBQAAAAAAAAABESEAMUFRYXGBECBQkaEwscHR8P/aAAgBAQABPyH6rH1BMU5nHSujP3ciKTPswn51T3yX3/TrSTdOt9jEe+TDFl7BRpxqWZyAjiFsm6hB5TfGW5UIcue5wQJj3Q6B5YeMv7+V3BRDfjI5OM1LwdiGPwsO1OX3WGA4huIwXihDGJOun5JlL7Bh+5yLlNyJIApcKtryt3Xi0iJiUzDQDuSA4rUDcbxU0OBSI2rHKlxoRmidUw0C8sWiOBQ7cXKQu5tovwwtEIEEiNE85QEsjlCgdyAA+iHfCIoMMKBGROmu/ije9pf4z/H/AM4VIyh6Y3yw98uV5AFaTMnVrJynT33uaqx/eSC61wBFz7HUY0jf285ngJc4L9hTlQG5HpRhBCQqI+SjgkuWAAN8oA4DrfzD3zunTvMnDFWwDGCjR5YDBT0DBfZHouSS7eqndxC7LMhb22jXX4Pqw3q44+wQ9VsK+sf/2gAMAwEAAgADAAAAEPPPPPPPPPPPPPPPN9OONPLKZPAJfPPHHLPPPPPPPPPPPPPPPPP/xAAfEQEAAAUFAQAAAAAAAAAAAAABESAxUWEAITBAcZH/2gAIAQMBAT8Q5olMTe1s6VIFDedIJEKY8k+nX//EABwRAQABBAMAAAAAAAAAAAAAAAEhABEgMTBAYf/aAAgBAgEBPxDmKs2oYhk3mAVCXCb+df8A/8QAIxABAQEAAwACAgEFAAAAAAAAAREhADFBUWEgUBAwcYGR8f/aAAgBAQABPxD9rlV01XqZoo1pk64hdM/7EPUZwM3350akzYJ/p3lcVF6EpKPhcx2fjvLlMSCPQSVddFrXdZ3ZHRrJ221FR9Sl+E+TmtaA1bAaIRYvjxUBPEcwBq9Lf7PCQsUdV5RJH09CWutuvh/294g3jnRuHUi/fq3ITnMZkDxqbe+vwVmePYj/AHivocCJqxiIGAAgsPhtgNkULjcJvEHJ6o9hHbY5OF556fSp0Kkl24/ncAsZGjR7y/JVh7ei9DsPvmsoSoSdOkIzLPW2rANZA9lR/nlhfhguOHuiCqhwpwFP7TJcXQiD+A6qRGHwqP4bEdmzx6gMP6cAK9DHgsoCh6LnGnSJwKMKYC3qvEYe7oPKhVVbAicXJR6SvQbYYHXMGbDgdsEkKrYM4RaG7koJDsdL2JnDafyKTmFIAMCp/Gt1ukJYpmO01zhgsV7kEiKCKzeAfC2EXujVV4CHrHizS8AhCx3iIKH3z0+3rylyUhmjiELYqJTDJ+4//9k=" alt="" class="rounded w-4 h-4 mt-1.5 mr-1">
+         <p class="text-xs font-semibold text-[rgba(0,0,0,0.9)] cursor-pointer">CyberDude Networks Private Limited</p>
+        </div>
+        <!-- end image below -->
+      </div>
+      
+    </div>
+      
+    <!-- profile view container -->
+    <div class="flex flex-col items-center justify-between font-medium py-4 space-y-3 bg-[#FFFFFF] border border-gray-300 mt-2 rounded-lg text-xs">
+        <p class="flex justify-between cursor-pointer w-50 hover:underline">Profile Viewers<span class="text-[rgb(10,102,194)]">27</span></p>
+        <p class="flex justify-between cursor-pointer w-50 hover:underline">Post impression<span class="text-[rgb(10,102,194)]">87</span></p>
+      </div>
+      
+      <!-- ulock more profile section -->
+       <div class="bg-[#FFFFFF] py-3 px-2 mt-2 rounded-lg border border-gray-300 ">
+        <p class="text-[rgba(0,0,0,0.6)] font-normal text-xs px-2">Unlock 4x more profile visits </p>
+        <!-- image  -->
+        <div class="flex items-center gap-2 px-2 pt-1">
+          <div class="bg-linear-[40deg,#C37D16_50%,#E7A33E_50%]  p-2 rounded w-2"></div>
+          <p class="text-xs font-medium" > Try Premium for ₹0</p>
+        </div>
+        <!-- unlock end below -->
+       </div>
+       
+       <!-- logo last container -->
+        <div class="bg-[#FFFFFF] flex text-xs gap-2 flex-col border border-gray-300  rounded-lg py-2 mt-2 px-4 space-y-3">
+          <p><i class="pr-5 fa-solid fa-bookmark fa-md"></i>Saved items</p>
+          <p><i class="pr-5 fa-solid fa-people-group fa-md"></i>Groups</p>
+          <p><i class="pr-5 fa-solid fa-newspaper fa-md"></i>Newsletters</p>
+          <p><i class="pr-5 fa-solid fa-calendar-day fa-md"></i>Events</p>
+          
+         
+
+
+          
+        </div>
+
+        
+        
+       </div>
+
+    </div>
+</aside> 
+
+  <!-- main content  -->
+
+  <main class="h-90 rounded-b-lg col-span-1 rounded-t-lg bg-[#FFFFFF] ">
+
+    <!--  top position -->
+    <div class="bg-[#FFFFFF]  flex gap-3 rounded-t-lg rounded-b-lg py-3 pt-4 px-4">
+      <img src="./public/pr.png" class="w-12 h-12 rounded-full " alt="profile image">
+      <!-- search icon -->
+       <input type="search" placeholder="Start a Post" class="text-[] border  rounded-4xl px-5 text-sm font-medium w-full ">
+    </div>
+    <!-- botton position -->
+     <div class="flex items-center justify-around   py-2 rounded-b-lg bg-[#FFFFFF]">
+      
+        
+        <p class="flex items-center justify-center gap-1 text-[rgba(0,0,0,0.75)] text-sm font-semibold"><svg width="30px" viewBox="0 -7 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>Youtube-color</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Color-" transform="translate(-200.000000, -368.000000)" fill="#5F9B41"> <path d="M219.044,391.269916 L219.0425,377.687742 L232.0115,384.502244 L219.044,391.269916 Z M247.52,375.334163 C247.52,375.334163 247.0505,372.003199 245.612,370.536366 C243.7865,368.610299 241.7405,368.601235 240.803,368.489448 C234.086,368 224.0105,368 224.0105,368 L223.9895,368 C223.9895,368 213.914,368 207.197,368.489448 C206.258,368.601235 204.2135,368.610299 202.3865,370.536366 C200.948,372.003199 200.48,375.334163 200.48,375.334163 C200.48,375.334163 200,379.246723 200,383.157773 L200,386.82561 C200,390.73817 200.48,394.64922 200.48,394.64922 C200.48,394.64922 200.948,397.980184 202.3865,399.447016 C204.2135,401.373084 206.612,401.312658 207.68,401.513574 C211.52,401.885191 224,402 224,402 C224,402 234.086,401.984894 240.803,401.495446 C241.7405,401.382148 243.7865,401.373084 245.612,399.447016 C247.0505,397.980184 247.52,394.64922 247.52,394.64922 C247.52,394.64922 248,390.73817 248,386.82561 L248,383.157773 C248,379.246723 247.52,375.334163 247.52,375.334163 L247.52,375.334163 Z" id="Youtube"> </path> </g> </g> </g></svg>Video</p>
+          
+        <p  class="flex items-center justify-center gap-1 text-[rgba(0,0,0,0.75)] text-sm font-semibold">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 24 24"><!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE --><path fill="#3276C3"  d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21zm0-2h14V5H5zm1-2h12l-3.75-5l-3 4L9 13zm-1 2V5z"/></svg>
+          Photo  </p>
+
+        <p  class="flex items-center justify-center gap-1 text-[rgba(0,0,0,0.75)] text-sm font-semibold"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Pixelarticons by Gerrit Halfmann - https://github.com/halfmage/pixelarticons/blob/master/LICENSE --><path  fill="#E06847" d="M5 3H3v18h18V3zm14 2v14H5V5zm-2 2H7v2h10zM7 11h10v2H7zm7 4H7v2h7z"/></svg>
+        Write article</p>
+        </div> 
+    
+        <!-- line  -->
+         <div class="flex items-center justify-between bg-[#F4F2EE] py-1">
+          <hr class="flex-grow border-t border-gray-300">
+          <p class="text-[rgba(0,0,0,0.6)] text-xs font-normal px-2">Sort By <span class="text-[rgba(0,0,0,0.9)] text-xs font-semibold">Top</span></p>
+          
+         </div>
+         
+    <!-- content -->
+          <div class="border-lg">
+          <!-- top postion -->
+           <div class="flex items-center px-2 py-2 space-x-3 border-t-lg">
+           <img src="./public/pr.png" alt="profile_images"  class="w-10 h-10 rounded-full ">
+            
+            <div class="flex flex-col">
+               <h2 class="text-md text-[rgba(0,0,0,0.9)] font-semibold">Deva P<span class="text-[rgba(0,0,0,0.6)]"> • 1st</span></h2>
+                <p class="text-[rgba(0,0,0,0.6)] text-sm">Junior Web Developer | Proficient in Frontend & Backend...</p>
+                <p class="text-[rgba(0,0,0,0.6)] text-xs">9m •</p>
+              </div>
+           </div>
+           <!-- mid position -->
+            <div class="flex flex-col px-5 py-2 ">
+              <p>Google Meet Landing Page Ui</p>
+              <p>Task:  I build a google meet landing page ui using Tailwind css </p>   
+               
+            </div>
+            <!-- last position -->
+             <div class="flex flex-col px-5 py-2 mx-6 border border-gray-300 rounded-lg">
+              
+                <h3 class="font-semibold text-sm px-2  text-[rgba(0,0,0,0.9)]">Google Landing page</h3>
+                 <p class="text-[rgba(0,0,0,0.6)] px-2 text-xs font-normal">googlemeet-landing-page.vercel.app</p>
+             </div>
+            
+             <!-- end content below g -->
+          </div>
+    
+
+    
+  </main>
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- right content -->
+   <aside class="h-90 bg-[#FFFFFF] rounded-lg">
+    
+    <div class="flex flex-col ">
+        <!-- header -->
+         <div class="flex justify-between px-4 py-2 ">
+          <h3 class="text-xl font-semibold text-[rgba(0,0,0,0.9)]">Linkedin News</h3>
+          <svg width="14" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="[rgba(0,0,0,0.9)]" class="bi bi-info-square-fill"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path> </g></svg>
+    </div>
+        <h3 class="text-[rgba(0,0,0,0.6)] text-md font-semibold px-4" >Top Stories</h3>
+      
+    </div>
+
+    <!-- sub heading -->
+     <div class="flex flex-col " >
+      <ul>
+        <li class="px-4 py-2 space-y-0.5 hover:bg-[#EBEBEB] transition-colors duration-200">
+                <p class="text-sm font-semibold text-[rgba(0,0,0,0.9)]">Top newsletters of the week</p>
+                <p class="text-xs font-normal text-[rgba(0,0,0,0.6)]">2d ago • 5,228 readers</p>
+                
+        </li>
+        
+        <!-- 2nd -->
+        <li class="px-4 py-2 space-y-0.5 hover:bg-[#EBEBEB] transition-colors duration-200">
+                <p class="text-sm font-semibold text-[rgba(0,0,0,0.9)]">Sliver prices hit 2 lakhs</p>
+                <p class="text-xs font-normal text-[rgba(0,0,0,0.6)]">2d ago • 4,047 readers</p>
+                
+        </li>
+           <!--3rd  -->
+
+           <li class="px-4 py-2 space-y-0.5 hover:bg-[#EBEBEB] transition-colors duration-200">
+                <p class="text-sm font-semibold text-[rgba(0,0,0,0.9)]">Big Tech bets big on India</p>
+                <p class="text-xs font-normal text-[rgba(0,0,0,0.6)]">2d ago • 3,056 readers</p>   
+        </li>
+        <!-- 4th -->
+          <li class="px-4 py-2 space-y-0.5 hover:bg-[#EBEBEB] transition-colors duration-200">
+                <p class="text-sm font-semibold text-[rgba(0,0,0,0.9)]">AP bus accidents leaves 9 dead</p>
+                <p class="text-xs font-normal text-[rgba(0,0,0,0.6)]">2d ago • 2,113 readers</p>   
+        </li>
+        <!-- 5th -->
+          <li class="px-4 py-2 space-y-0.5 hover:bg-[#EBEBEB] transition-colors duration-200">
+                <p class="text-sm font-semibold text-[rgba(0,0,0,0.9)]">Thailand set for early elections</p>
+                <p class="text-xs font-normal text-[rgba(0,0,0,0.6)]">1d ago • 1,285 readers</p>   
+        </li>
+
+        
+      </ul>
+
+      
+      
+     </div>
+
+
+
+    
+   </aside>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
