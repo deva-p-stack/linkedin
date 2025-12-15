@@ -35,7 +35,7 @@ A frontend project built using Vanilla JavaScript and Tailwind CSS v4.
  - Clone the repository
  - Install dependencies
  - Run the development sever
- - Open teh broswer Navigate to http://localhost:5000
+ - Open the broswer Navigate to http://localhost:5000
 
 ---
 
