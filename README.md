@@ -14,8 +14,6 @@ A frontend project built using Vanilla JavaScript and Tailwind CSS v4.
 
 
 ---
-
-
 ## Future Enhancements
 - Add JavaScript for enhanced interactivity
 - Implement dark mode toggle
@@ -26,6 +24,18 @@ A frontend project built using Vanilla JavaScript and Tailwind CSS v4.
 ### Live link:
 
 [View Live Project](https://deva-p-stack.github.io/linkedin/)
+
+---
+## Getting Started
+**Prerequisites**
+- Node js 18+
+- TailwindCSS
+
+**Installation**
+ - Clone the repository
+ - Install dependencies
+ - Run the development sever
+ - Open teh broswer Navigate to http://localhost:5000
 
 ---
 
